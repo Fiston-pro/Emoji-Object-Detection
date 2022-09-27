@@ -1,9 +1,7 @@
 # Live Object Detection with OpenVINO™
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openvinotoolkit/openvino_notebooks/HEAD?filepath=notebooks%2F401-object-detection-webcam%2F401-object-detection.ipynb)
-
-*Binder is a free service where the webcam will not work, and performance on the video will not be good. For the best performance, install the notebooks locally.*
-
+![office detection](./media/office.gif)
+![road detection](./media/road.gif)
 
 Object detection finds predefined objects in an image or video. Each returned object includes features such as label, probability and bounding box coordinates relative to image boundaries with an emoji on the right bottom corner. 
 
@@ -15,4 +13,16 @@ This notebook demonstrates object detection with OpenVINO, using the [SSDLite Mo
 
 ## Installation Instructions
 
-If you have not installed all required dependencies, follow the [Installation Guide](../../README.md).
+1. Start by making a virtual environment ```python3 -m venv venv```
+2. Activate the virtual environment ```source venv/bin/activate```
+3. Install the dependencies ```pip install -r requirements.txt```
+4. Start your jupyter notebook ```jupyter notebook OpenVINO-object-detection.ipynb```
+
+## Contribution
+
+I still have alot of objects which are missing their emojis. To contribute on emojis: 
+1. you can go on [Openmoji](https://openmoji.org/)
+2. search for a missing object which is in the list of predefined objects but missing from emoji folder 
+3. resize it to ```300X3000``` pixels
+4. add it into emoji folder and name it, the respective name as shown in the list of predefined objects  
+ 
